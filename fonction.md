@@ -1,4 +1,4 @@
-Permet d'ecrire des blocs de conde reutilisables.
+Permet d'ecrire des blocs de code reutilisables.
 
 Exemple:
 ```cpp
