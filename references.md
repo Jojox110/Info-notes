@@ -34,3 +34,12 @@ int main() {
     cout << &x << endl; // Encore l'adresse a n
 }
 ```
+
+### Notes
+Chepas pourquoi, mais tu ne peux pas prendre la référence d'un char
+```cpp
+int main() {
+    char c = 'a';
+    cout << &c << endl; // a
+}
+```

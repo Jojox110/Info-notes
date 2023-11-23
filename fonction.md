@@ -5,7 +5,7 @@ Exemple:
 
 int add(int a, int b) { 
 
-    int answe = a + b;
+    int answer = a + b;
     return answer;
 }
 
