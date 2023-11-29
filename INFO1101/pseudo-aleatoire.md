@@ -15,7 +15,7 @@ int main() {
 ### rand
 La fonction rand est celle qui génère la valeur pseudo-aléatoire initiale. Sa va générer une valeur entière entre [0, 32767] sur le compilateur de Visual Studio et entre [0, INT32_MAX] sur le compilateur de Linux.
 
-### Les nombres pseudo-aléatoire réel
+### Les nombres pseudo-aléatoire entier
 ```cpp
 int main() {
     // Exemple pour générer un lancé de dé
@@ -27,10 +27,16 @@ int main() {
 }
 ```
 
-### Les nombres pseudo-aléatoire entier
+### Les nombres pseudo-aléatoire réel
 ```cpp
 int main() {
-    TODO
+    // Exemple pour générer un mombre réel entre -1 et 1
+    double resultats = 1 - 2 * (double)rand() / RAND_MAX
+    /*
+    Note importante, ici j'ai utiliser RAND_MAX, mais Julien utilise toujours rand()/32767.0 pour [0.0, 1.0] ou rand()/32768.0 pour [0.0, 1.0[. 
+    Dans VS, rand ne peut etre que 32676 valeur differente, aka la valeur maximal d'un signed short.
+    Sur Linux, rand peut etre jusqu'a la valeur d'un signed int32
+    */
 }
 ```
 
@@ -123,3 +129,4 @@ somme = somme * 2 + rand() % 2 = 011000 (0 + 2 + 4 + 0 + 0 + 0)
 
 Ici on peux voir que chaque fois on multiplie somme par deux, on ajoute la valeur de rand() % 2 au début du chiffre binaire.
 
+```
