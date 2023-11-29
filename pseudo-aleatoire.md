@@ -34,4 +34,92 @@ int main() {
 }
 ```
 
- 
+### Générer des grand nombres aléatoire
+```cpp
+unsigned long long aleatoireGrand(short nombreDeBits )
+{
+    unsigned long long somme = 0;
+    short base = 2; // Ceci est au choix, changer au besoin
+    for (long K = 1; K <= nombreDeBits; K++)
+    {
+        somme = somme * base + rand() % base;
+        cout << "Somme: " << somme << endl;
+    }
+
+    return somme;
+}
+```
+
+Exemple avec la base 10 avec 5 chiffres décimaux et srand(42):
+
+Durant la première itération:\
+somme = 0\
+somme = somme * 10 + rand() % 10 (aléatoire entre 0 et 9)\
+somme = 0 + 6\
+somme = 60
+
+Durant la deuxième itération:\
+somme = somme * 10 + rand() % 10\
+somme = 60 + 0\
+somme = 60
+
+Durant la troisième itération:\
+somme = somme * 10 + rand() % 10\
+somme = 600 + 1\
+somme = 601
+
+Durant la quatrième itération:\
+somme = somme * 10 + rand() % 10\
+somme = 6010 + 1\
+somme = 6011
+
+
+Durant la cinquième itération:\
+somme = somme * 10 + rand() % 10\
+somme = 60110 + 2\
+somme = 60112
+
+Dans l'exemple on peut voir que chaque fois qu'on fait le calcul somme * 10, on ajoute un extra 0 au nombre de l'itération précédent. C'est comme aller de 5x10^5 à 5x10^6 et ajouter le résultat de rand après.
+
+<br><br>
+
+Exemple avec la base 2 avec 5 chiffre binaire et srand(42):
+
+Première itération:\
+somme = 0\
+somme = somme * 2 + rand() % 2 (soit 0 ou 1)\
+somme = 0 + 0\
+somme = 0
+
+Deuxième itération:\
+somme = somme * 2 + rand() % 2\
+somme = 0 + 0\
+somme = 0
+
+Troisième itération:\
+somme = somme * 2 + rand() % 2\
+somme = 0 + 1\
+somme = 1
+
+Quatrième itération:\
+somme = somme * 2 + rand() % 2\
+somme = 2 * 1 + 1\
+somme = 3
+
+Cinquième itération:\
+somme = somme * 2 + rand() % 2\
+somme = 3 * 2 + 0\
+somme = 6
+
+Dans ces itérations, on voit un concept similaire au exemples qu'utilisait une base 10. Chaque nombre est multiplier par deux et après on ajoute la valeur de rand, alors soit 0 ou 1.
+
+Ici est une visualization de ce qui ce passe si on travail uniquement en binaire avec somme = 0 au début (encore srand(42)):
+
+somme = somme * 2 + rand() % 2 = 00 (0 + 0)\
+somme = somme * 2 + rand() % 2 = 000 (0 + 0 + 0)\
+somme = somme * 2 + rand() % 2 = 1000 (1 + 0 + 0 + 0)\
+somme = somme * 2 + rand() % 2 = 11000 (1 + 2 + 0 + 0 + 0)\
+somme = somme * 2 + rand() % 2 = 011000 (0 + 2 + 4 + 0 + 0 + 0)
+
+Ici on peux voir que chaque fois on multiplie somme par deux, on ajoute la valeur de rand() % 2 au début du chiffre binaire.
+
