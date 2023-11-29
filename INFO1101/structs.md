@@ -72,3 +72,21 @@ int main() {
     cout << x[134].x << endl;
 }
 ```
+### Struct comme une fonction
+```cpp
+using namespace std;
+
+struct uneDate() {
+    short annees;
+    short mois;
+    short jours;
+}
+
+uneDate fonction() {
+    uneDate date;
+    date.annee = 1970;
+    date.mois = 1;
+    date.jour = 1;
+    return date;
+}
+```

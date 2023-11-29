@@ -58,6 +58,23 @@ int main() {
 }
 ```
 
+### Passer ifstream, ofstream, cin et cout comme paramètre
+```cpp
+#include <fstream>
+#include <string>
+
+void ecrire(&ostream conduit, string s) {
+    // ofstream et cout peuvent être passer comme paramètre actuel de ostream
+    conduit << s;
+}
+
+void lire(&istream conduit, string &s) 
+    // ifstream et cin peuvent être passer comme paramètre actuel de istream
+    // parce que s est une référence, on a pas besoin de faire return s pour que la fonction qui appelle lire ont le resultats
+    conduit >> s;
+```
+
 ### Notes additionelles
 - C'est possible d'avoir plusieurs ifstream et/ou ofstream d'ouvert en même temps, mais si on aimerait re-utiliser un filestream, on doit utiliser .close() et après .open()
 - C'est une bonne idée de toujours utiliser .close() quand on a finit avec le filetsream pour assurer que rien d'inattendu se produit
+

@@ -45,4 +45,4 @@ int main() {
 ```
 
 ### La génération de l'adresse du tableau
-TODO
+&T[K] = &T + K * (sizeof(T[K]))

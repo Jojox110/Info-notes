@@ -129,4 +129,56 @@ somme = somme * 2 + rand() % 2 = 011000 (0 + 2 + 4 + 0 + 0 + 0)
 
 Ici on peux voir que chaque fois on multiplie somme par deux, on ajoute la valeur de rand() % 2 au début du chiffre binaire.
 
+### Brasser un tableau (changer les valeurs de places aléatoirement, lab 28nov Q5)
+```cpp
+int main() {
+    srand(42);
+    short T[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    short temporaire;
+    short indice_aleatoire;
+
+    for (int i = 0; i < 1000; i++) {
+        // La même logique que la fonction échanger
+        temporaire = T[i % 10];
+        indice_aleatoire = rand() % 10;
+        T[i % 10] = T[indice_aleatoire];
+        T[indice_aleatoire] = temporaire;
+    }
+
+    for (int i = 0; i < 10; i++) {
+        cout << T[i] << " ";
+    }
+    cout << endl;
+    /*
+    {9, 8, 5, 7, 3, 6, 10, 4, 2, 1}
+    */
+}
+```
+
+### Sélectionner une valeur aléatoire d'un tableau (aléatoire non-contigu)
+```cpp
+int main() {
+    srand(42);
+    short T[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    for (int i = 0; i < 5; i++) {
+        // Rappel: rand() % 10 est l'interval [0, 9]
+        cout << T[rand() % 10] << endl;
+    }
+    /*
+    7, 1, 2, 2, 3
+    */
+}
+```
+### Distribution non-uniforme aléatoire (aléatoireTriangulaire, lab 28nov Q3)
+```cpp
+int main() {
+    srand(42);
+    short T[10] = {1, 2, 2, 3, 3, 3, 4, 4, 4, 4};
+    for (int i = 0; i < 10; i++) {
+        cout << T[rand() % 10] << endl;
+    }
+    /*
+    4, 1, 2, 2, 2, 4, 2, 1, 3, 3
+    */
+}
 ```
