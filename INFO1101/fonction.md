@@ -31,7 +31,7 @@ Une fonction doit etre appeleer dans la fonctin main() afin d'etre executer.
 
 ## Les signatures de fonctions
 
-Les signatures de fonctions sont tous les différentes combinaison de paramètre, soit passer par copie ou par référence, qu'on à défénit soit directement ou indirectement
+Les signatures de fonctions sont tous les différentes combinaison de paramètre, soit passer par copie ou par référence.
 
 Prennons le code suivant comme exemple:
 ```cpp
@@ -48,8 +48,7 @@ int func(int &un, int deux) {
     return 0;
 }
 ```
-
-Ici la fonction func a deux signature de fonction, soit passer un par copie et deux par copie, ou passer un par référence et passer deux par copie. Quand on défénit un paramètre avec une référence, on a le choix de le passer par copie ou par référence.
+Ici la fonction func a deux signature de fonction, soit passer un par variable (référence) et un par valeur ou variable (copie) ou soit passer un par variable (référence) et un par variable (copie)
 
 Mais cela peut causer des problèmes aussi:
 ```cpp
@@ -72,9 +71,7 @@ Dans ce cas, la première appelle va fonctionner sans problème, sa va choisir l
 
 Ceci est tous les signatures de fonctions qui est créer dans la dernière exemple:
 
-func(int copie, int copie)\
-func(int référence, int copie)\
-func(int copie, int référence)\
-func(int référence, int référence)
+func(int variable (référence), int variable ou valeur (copie))\
+func(int variable (référence), int variable (référence))\
 
 func(C, D) est valide pour tous ces signature à cause que C et D peuvent être passer par copie ou par référence, alors le compilateur ne sait pas quelle utiliser
