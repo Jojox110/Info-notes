@@ -42,5 +42,5 @@ int main() {
 
 - Utiliser des exceptions (TODO, matière plus avancer)
 
-## Liens utile
+### Liens utile
 - https://cplusplus.com/doc/tutorial/dynamic/

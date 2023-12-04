@@ -9,7 +9,9 @@ int main() {
 
 <br>
 
-## Passer une référence comme paramètre
+## Deux explications pour des références + des fonctions
+
+### Passer une référence comme paramètre
 Quand on passe un paramètre par référence, cela nous permet de modifier la variable originale et non une copie de la variable
 ```cpp
 void modifier(long &param) {
@@ -20,6 +22,19 @@ int main() {
     long x = 10;
     modifier(x);
     cout << x << endl; // 11
+}
+```
+
+### Fonctions
+
+C'est possible d'utiliser des references dans une fonction. Ceci est utile pour modifier un variable sans avoir besoin d'utiliser return. 
+
+Voici un exemple:
+```cpp
+void echanger(int &A, int &B){
+    int C = A;
+    A = B;
+    B = A;
 }
 ```
 
@@ -40,20 +55,6 @@ int main() {
 ```
 
 <br>
-
-## Fonctions
-
-C'est possible d'utiliser des references dans une fonction. Ceci est utile pour modifier un variable sans avoir besoin d'utiliser return. 
-
-Voici un exemple:
-```cpp
-void echanger(int &A, int &B){
-    int C = A;
-    A = B;
-    B = A;
-}
-```
-
 
 ## Notes
 Chepas pourquoi, mais tu ne peux pas prendre la référence d'un char
