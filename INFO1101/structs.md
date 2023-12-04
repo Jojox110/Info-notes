@@ -33,7 +33,12 @@ struct unStruct {
     long x;
     long y;
     long z;
-    unStruct *prochain_point; // Il doit être un pointeur
+    unStruct *prochain_point; 
+    /*
+    On ne peux pas définir un champs unStruct normallement, car on n'a pas encore finit la définition de unStruct. Cependant, parce qu'un pointeur définit seulement l'address + le type et non l'initialization, on est capable de le faire ici. 
+
+    À noter: on ne peut aussi pas faire une allocation dynamique avec new dans ce cas non plus.
+    */
 };
 
 int main() {
