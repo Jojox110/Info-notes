@@ -22,7 +22,7 @@ int main() {
     short resultat = 1 + rand() % 6;
     /*
     Pour générer des nombres entiers, on peut utiliser le format suivant:
-    resultat = rand() & (max - min + 1) + min
+    resultat = rand() % (max - min + 1) + min
     */
 }
 ```
