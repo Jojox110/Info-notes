@@ -1,4 +1,4 @@
-### Fonctions
+# Fonctions
 
 Permet d'ecrire des blocs de code reutilisables.
 
@@ -27,7 +27,9 @@ Une fonction à besoin:
 
 Une fonction doit etre appeleer dans la fonctin main() afin d'etre executer.
 
-### Les signatures de fonctions
+<br>
+
+## Les signatures de fonctions
 
 Les signatures de fonctions sont tous les différentes combinaison de paramètre, soit passer par copie ou par référence, qu'on à défénit soit directement ou indirectement
 

@@ -1,4 +1,4 @@
-### Les conduits et les fichiers
+# Les conduits et les fichiers
 Les conduits et les fichiers sont des outils disponible pour travailler avec des fichierse dans du C++
 
 Pour travailler avec des fichiers, on doit ajouter les méthodes de fstream
@@ -6,7 +6,9 @@ Pour travailler avec des fichiers, on doit ajouter les méthodes de fstream
 #include <fstream>
 ```
 
-### Les conduits d'entrée
+<br>
+
+## Les conduits d'entrée
 Les conduits d'entrée utilisent ifstream (input file stream). Cette méthode peut sortir des données d'un fichier.
 
 Pour faire cela, on doit utiliser la méthode .open(filename, ios::in) (input output stream :: output) et la méthode .close()
@@ -25,7 +27,9 @@ int main() {
 }
 ```
 
-### Les conduits de sortie
+<br>
+
+## Les conduits de sortie
 Les conduits de sortie utilisent ofstream (output file stream). Cette méthode peux entrer des données dans un fichier.
 
 On peut encore utiliser .open et .close, mais on doit mettre ios::out aulieu de ios::in dans .open.
@@ -44,7 +48,9 @@ int main() {
 }
 ```
 
-### Comment détecter un fichier non-existant
+<br>
+
+## Comment détecter un fichier non-existant
 ```cpp
 #include <fstream>
 
@@ -58,7 +64,9 @@ int main() {
 }
 ```
 
-### Passer ifstream, ofstream, cin et cout comme paramètre
+<br>
+
+## Passer ifstream, ofstream, cin et cout comme paramètre
 ```cpp
 #include <fstream>
 #include <string>
@@ -74,7 +82,9 @@ void lire(&istream conduit, string &s)
     conduit >> s;
 ```
 
-### Notes additionelles
+<br>
+
+## Notes additionelles
 - C'est possible d'avoir plusieurs ifstream et/ou ofstream d'ouvert en même temps, mais si on aimerait re-utiliser un filestream, on doit utiliser .close() et après .open()
 - C'est une bonne idée de toujours utiliser .close() quand on a finit avec le filetsream pour assurer que rien d'inattendu se produit
 

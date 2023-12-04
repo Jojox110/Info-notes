@@ -1,7 +1,9 @@
-### Tableau
+# Tableau
 Les tableau, aka des "arrays", est une structure de données qui permet d'entretenir plusieurs valeurs d'un même type ensemble
 
-### La syntaxe
+<br>
+
+## La syntaxe
 ```cpp
 int main() {
     long x[10]; 
@@ -19,7 +21,9 @@ int main() {
 }
 ```
 
-### Les tableaux et les loops
+<br>
+
+## Les tableaux et les loops
 ```cpp
 int main() {
     long x[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -30,7 +34,9 @@ int main() {
 }
 ```
 
-### Les propriétés d'un tableau
+<br>
+
+## Les propriétés d'un tableau
 ```cpp
 int main() {
     long x[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -44,5 +50,7 @@ int main() {
 }
 ```
 
-### La génération de l'adresse du tableau
+<br>
+
+## La génération de l'adresse du tableau
 &T[K] = &T + K * (sizeof(T[K]))

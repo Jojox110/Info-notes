@@ -1,4 +1,4 @@
-### Liste de vocabulaire mentionné en classe 
+# Liste de vocabulaire mentionné en classe 
 - Instruction Vide: Une condition qui ne sera jamais executé
 - Code orphelin: Du code qui sera jamais executé
 - Technique du compteur: Avoir un nombre au début d'un fichier (ou un nombre définit en avance) qui nous dit combien de données lui suit

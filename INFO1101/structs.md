@@ -1,4 +1,4 @@
-### Structs
+# Structs
 Des structs sont des types défénit par l'utilisateur. Aka, c'est nous qui créer le type.
 ```cpp
 using namespace std;
@@ -23,7 +23,9 @@ int main() {
 }
 ```
 
-### Comment utiliser le struct qu'on défénit comme champs
+<br>
+
+## Comment utiliser le struct qu'on défénit comme champs
 ```cpp
 using namespace std;
 
@@ -39,7 +41,9 @@ int main() {
 }
 ```
 
-### Trouver le type et grandeur d'un champs
+<br>
+
+## Trouver le type et grandeur d'un champs
 ```cpp
 using namespace std;
 
@@ -56,7 +60,9 @@ int main() {
 }
 ```
 
-### Comment défénir plusieurs structs en même temps
+<br>
+
+## Comment défénir plusieurs structs en même temps
 ```cpp
 using namespace std;
 
@@ -72,7 +78,10 @@ int main() {
     cout << x[134].x << endl;
 }
 ```
-### Struct comme une fonction
+
+<br>
+
+## Struct comme paramètre d'une fonction
 ```cpp
 using namespace std;
 
