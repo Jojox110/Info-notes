@@ -4,7 +4,7 @@ Les nombres pseudo-aléatoire sont des nombres généré par un algorithme. Parc
 <br>
 
 ## srand
-La méthode srand est utilisé pour donné un "seed" à l'algorithme, ce qui veux dire c'est le nombre qui va être utilisé pour généré les nombres. Pour le rendre plus aléatoire, on peut utiliser time(NULL). Cela représente le "epoch time" ou le montant de seconde depuis 00/00/1970 00:00:00. On doit utiliser le include ctime pour avoir cette méthode.
+La méthode srand est utilisé pour donné un "seed" à l'algorithme, ce qui veux dire c'est le nombre qui va être utilisé pour généré les nombres. Pour le rendre plus aléatoire, on peut utiliser time(NULL). Cela représente le "epoch time" ou le montant de seconde depuis 01/01/1970 00:00:00. On doit utiliser le include ctime pour avoir cette méthode.
 
 ```cpp
 #include <ctime>
