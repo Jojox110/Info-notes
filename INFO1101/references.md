@@ -1,4 +1,4 @@
-### Références
+# Références
 Une référence est une adresse mémoire d'une variable
 ```cpp
 int main() {
@@ -6,6 +6,10 @@ int main() {
     cout << &x << endl; // L'adresse de x
 }
 ```
+
+<br>
+
+## Deux explications pour des références + des fonctions
 
 ### Passer une référence comme paramètre
 Quand on passe un paramètre par référence, cela nous permet de modifier la variable originale et non une copie de la variable
@@ -21,7 +25,22 @@ int main() {
 }
 ```
 
-### Mettre une références dans une variable sans pointeur
+### Fonctions
+
+C'est possible d'utiliser des references dans une fonction. Ceci est utile pour modifier un variable sans avoir besoin d'utiliser return. 
+
+Voici un exemple:
+```cpp
+void echanger(int &A, int &B){
+    int C = A;
+    A = B;
+    B = A;
+}
+```
+
+<br>
+
+## Mettre une références dans une variable sans pointeur
 C'est possible d'avoir une variable qui contient une référence sans utiliser un pointeur, mais on ne peux pas changer la références que la variable contient
 ```cpp
 int main() {
@@ -35,7 +54,9 @@ int main() {
 }
 ```
 
-### Notes
+<br>
+
+## Notes
 Chepas pourquoi, mais tu ne peux pas prendre la référence d'un char
 ```cpp
 int main() {

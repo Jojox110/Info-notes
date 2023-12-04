@@ -1,8 +1,10 @@
-### Les nombres pseudo-aléatoire
+# Les nombres pseudo-aléatoire
 Les nombres pseudo-aléatoire sont des nombres généré par un algorithme. Parce que c'est généré par un algorithme, on dit que c'est pseudo-aléatoire
 
-### srand
-La méthode srand est utilisé pour donné un "seed" à l'algorithme, ce qui veux dire c'est le nombre qui va être utilisé pour généré les nombres. Pour le rendre plus aléatoire, on peut utiliser time(NULL). Cela représente le "epoch time" ou le montant de seconde depuis 00/00/1970 00:00:00. On doit utiliser le include ctime pour avoir cette méthode.
+<br>
+
+## srand
+La méthode srand est utilisé pour donné un "seed" à l'algorithme, ce qui veux dire c'est le nombre qui va être utilisé pour généré les nombres. Pour le rendre plus aléatoire, on peut utiliser time(NULL). Cela représente le "epoch time" ou le montant de seconde depuis 01/01/1970 00:00:00. On doit utiliser le include ctime pour avoir cette méthode.
 
 ```cpp
 #include <ctime>
@@ -12,10 +14,14 @@ int main() {
 }
 ```
 
-### rand
+<br>
+
+## rand
 La fonction rand est celle qui génère la valeur pseudo-aléatoire initiale. Sa va générer une valeur entière entre [0, 32767] sur le compilateur de Visual Studio et entre [0, INT32_MAX] sur le compilateur de Linux.
 
-### Les nombres pseudo-aléatoire entier
+<br>
+
+## Les nombres pseudo-aléatoire entier
 ```cpp
 int main() {
     // Exemple pour générer un lancé de dé
@@ -27,7 +33,9 @@ int main() {
 }
 ```
 
-### Les nombres pseudo-aléatoire réel
+<br>
+
+## Les nombres pseudo-aléatoire réel
 ```cpp
 int main() {
     // Exemple pour générer un mombre réel entre -1 et 1
@@ -40,7 +48,9 @@ int main() {
 }
 ```
 
-### Générer des grand nombres aléatoire
+<br>
+
+## Générer des grand nombres aléatoire
 ```cpp
 unsigned long long aleatoireGrand(short nombreDeBits )
 {
@@ -129,7 +139,9 @@ somme = somme * 2 + rand() % 2 = 011000 (0 + 2 + 4 + 0 + 0 + 0)
 
 Ici on peux voir que chaque fois on multiplie somme par deux, on ajoute la valeur de rand() % 2 au début du chiffre binaire.
 
-### Brasser un tableau (changer les valeurs de places aléatoirement, lab 28nov Q5)
+<br>
+
+## Brasser un tableau (changer les valeurs de places aléatoirement, lab 28nov Q5)
 ```cpp
 int main() {
     srand(42);
@@ -155,7 +167,9 @@ int main() {
 }
 ```
 
-### Sélectionner une valeur aléatoire d'un tableau (aléatoire non-contigu)
+<br>
+
+## Sélectionner une valeur aléatoire d'un tableau (aléatoire non-contigu)
 ```cpp
 int main() {
     srand(42);
@@ -169,7 +183,10 @@ int main() {
     */
 }
 ```
-### Distribution non-uniforme aléatoire (aléatoireTriangulaire, lab 28nov Q3)
+
+<br>
+
+## Distribution non-uniforme aléatoire (aléatoireTriangulaire, lab 28nov Q3)
 ```cpp
 int main() {
     srand(42);

@@ -1,7 +1,9 @@
-### Unions
+# Unions
 Des unions sont des types défénits par l'utilisateur, comme des structs, mais tous les champs utilise la même espace de mémoire.
 
-### Les champs d'un union
+<br>
+
+## Les champs d'un union
 À cause que tous les champs d'un union sont à la même adresse mémoire, ils vont toutes prendre la même valeur. 
 ```cpp
 using namespace std;
@@ -22,7 +24,9 @@ int main() {
 }
 ```
 
-### Typeid, sizeof et référence d'un union
+<br>
+
+## Typeid, sizeof et référence d'un union
 ```cpp
 using namespace std;
 
@@ -41,11 +45,15 @@ int main() {
 }
 ```
 
-### Les utilités des unions
+<br>
+
+## Les utilités des unions
 - Les unions nous permet de créer une variable qui peut être utilisé pour plus qu'un type
 - Autre ??
 
-### Comment la mémoire d'un union fonctionne
+<br>
+
+## Comment la mémoire d'un union fonctionne
 Prenons l'union suivant comme exemple pour le premier cas:
 ```cpp
 union unUnion {

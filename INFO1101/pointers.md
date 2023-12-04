@@ -1,4 +1,4 @@
-### C'est quoi un pointeur
+# Les pointeur
 Des pointeurs son des variables qui contient des références à un autre variable
 
 ```cpp
@@ -12,10 +12,14 @@ int main() {
 }
 ```
 
-### Pourquoi utiliser des pointeurs
+<br>
+
+## Pourquoi utiliser des pointeurs
 Les pointers nous permet de créer des applications qui sont mieux optimizer. Par exemple, on peut faire un pointeur pointer à la valeur aulieu d'avoir besoin de la recopier dans une nouvelles variable.
 
-### Adresse nulle
+<br>
+
+## Adresse nulle
 L'adresse nulle est une convention qui indique qu'un pointeur pointe a rien. (Aka NULL ou nullptr)
 
 ```cpp

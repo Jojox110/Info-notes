@@ -1,5 +1,4 @@
-
-### Les opérateurs arithmétiques
+# Les opérateurs arithmétiques
 ```
 - + (addition entre deux nombre ou une concaténation)
 - - (soustraction ou négation)
@@ -8,7 +7,9 @@
 - % (modulo)
 ```
 
-### Les opérateurs d'affectation
+<br>
+
+# Les opérateurs d'affectation
 ```
 - = (affectation)
 - += (affectation avec addition)
@@ -18,7 +19,9 @@
 - %= (affectation avec modulo)
 ```
 
-### Les opérateurs relationnels
+<br>
+
+# Les opérateurs relationnels
 ```
 - < (plus petit que)
 - > (plus grand que)
@@ -28,20 +31,26 @@
 - != (altérité ou différent de)
 ```
 
-### Les opérateurs logiques
+<br>
+
+# Les opérateurs logiques
 ```
 - && (et logique)
 - || (ou logique)
 - ! (négation logique)
 ```
 
-### Les opérateurs de flux
+<br>
+
+## Les opérateurs de flux
 ```
 - << (insertion de flux)
 - >> (extraction de flux)
 ```
 
-### Les opérateurs d'incrément et de décrément
+<br>
+
+# Les opérateurs d'incrément et de décrément
 ```
 - X++ (post-incrément)
 - ++X (pré-incrément)
@@ -49,13 +58,17 @@
 - --X (pré-décrément)
 ```
 
-### Les opérateurs de décalage
+<br>
+
+# Les opérateurs de décalage
 ```
 - << (Décalage vers la gauche)
 - >> (Décalage vers la droite)
 ```
 
-### Les opérateurs bit-à-bit
+<br>
+
+# Les opérateurs bit-à-bit
 ```
 - & (et bit-à-bit)
 - | (ou bit-à-bit)

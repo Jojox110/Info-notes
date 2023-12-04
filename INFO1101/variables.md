@@ -1,4 +1,4 @@
-### Les variables statique
+# Les variables statique
 Les variables statique sont des variables qui seront initializer au début de l'éxecution du programme et qui sera présent jusqu'à la fin. Parce qu'il sont statique, la valeur présent dans la variable sera préserver mênme si on essaye de re-initializer la variable.
 
 ```cpp
@@ -9,7 +9,9 @@ void func() {
 }
 ```
 
-### Les variables globale
+<br>
+
+# Les variables globale
 Des variables globale sont des variables qui ont été défénit dans la zone globale. Toutes les variables défénit dans cette zone sont statique par défault.
 
 ```cpp
@@ -22,7 +24,9 @@ int main() {
 }
 ```
 
-### Les variables constante
+<br>
+
+# Les variables constante
 Des variables constantes sont des variables qui ne peuvent pas changer, le compilateur est supposer de nous donner un erreur si on essaye de changer une variable constante.
 
 ```cpp

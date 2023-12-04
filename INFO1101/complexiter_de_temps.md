@@ -1,8 +1,10 @@
-## Complexiter de temps d'un algorithme
+# Complexiter de temps d'un algorithme
 Les complexiter de temps d'un algorithme serves à décrire la performance d'un algorithme quand la grandeur des données d'entrée change\
 La variable N sers à décrire la grandeur des données d'entrée
 
-### Temps constant (1, CST)
+<br>
+
+## Temps constant (1, CST)
 Un algorithme à temps constant ne dépend pas de du montant de donnée d'entrée\
 Un exemple simple:
 ```cpp
@@ -11,7 +13,9 @@ int func(int[10] arr) {
 }
 ```
 
-### Temps linéaire (aN)
+<br>
+
+## Temps linéaire (aN)
 Un algorithme à temps linéaire dépend du montant de données\
 Un exemple simple:
 ```cpp
@@ -24,7 +28,9 @@ int sum(int[N] arr) {
 }
 ```
 
-### Temps quadratique (aN^2, Quad)
+<br>
+
+## Temps quadratique (aN^2, Quad)
 Un algorithme à temps quadratique dépend du montant de données au carrée, alors N * N données
 Un exemple simple:
 ```cpp
@@ -37,26 +43,54 @@ int matrice(int[N][M] grille, int N, int M) {
 }
 ```
 
+
 Trie a bulle, Trie à selection, Trie d'insertion sont aN^2
+
+<br>
 
 ### Chepas quoi mettre comme exemple pour les prochaines 4 temps
 
-### Temps cubique (aN^3, Cub)
+## Temps cubique (aN^3, Cub)
 Un algorithme à temps cubique dépend du montant de données au cube, alors N * N * N données
 
-### Temps quartique (aN^4, Quart)
+Voici un exemple simple avec 3 for loops:
+
+```cpp
+int fonction(int N, int K, int J){
+    for(int i = 0; i < N; i++){
+        for(int c = 0; c < K; c++){
+            for(int h = 0; h < J; j++){
+                ...
+            }
+        }
+    }
+}
+
+```
+
+<br>
+
+## Temps quartique (aN^4, Quart)
 Un algorithme à temps quartique dépend du montant de données à la 4, alors N * N * N * N données
 
-### Temps pentique (aN^5, Pent)
+<br>
+
+## Temps pentique (aN^5, Pent)
 Un algorithme à temps pentique dépend du montant de données à la 5, alors N * N * N * N  * N données
 
-### Temps exponentiel (a2^N, Exp)
+<br>
+
+## Temps exponentiel (a2^N, Exp)
 Un algorithme à temps exponentiel dépend du montant de données à la N, alors 2 * 2 * 2 ...
 
-### Temps logarithmique (aLogN)
+<br>
+
+## Temps logarithmique (aLogN)
 Un algorithme à temps logarithmique dépend du montant de données à la LogN\
 Un exemple est binary search
 
-### Temps surlinéaire (aNLogN)
+<br>
+
+## Temps surlinéaire (aNLogN)
 Un algorithme à temps surlinéaire dépend du montant de données à la N * LogN\
 Exemple: Quick sort, Merge sort, ...
