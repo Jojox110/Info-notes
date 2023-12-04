@@ -43,6 +43,7 @@ int matrice(int[N][M] grille, int N, int M) {
 }
 ```
 
+
 Trie a bulle, Trie à selection, Trie d'insertion sont aN^2
 
 <br>
@@ -51,6 +52,21 @@ Trie a bulle, Trie à selection, Trie d'insertion sont aN^2
 
 ## Temps cubique (aN^3, Cub)
 Un algorithme à temps cubique dépend du montant de données au cube, alors N * N * N données
+
+Voici un exemple simple avec 3 for loops:
+
+```cpp
+int fonction(int N, int K, int J){
+    for(int i = 0; i < N; i++){
+        for(int c = 0; c < K; c++){
+            for(int h = 0; h < J; j++){
+                ...
+            }
+        }
+    }
+}
+
+```
 
 <br>
 

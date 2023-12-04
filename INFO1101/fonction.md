@@ -13,10 +13,12 @@ int add(int a, int b) {  // a et b sont des paramètre formel
 
 int main()
 {
-    add(5, 2); // 5 et 2 sont des paramètre actuel
+    int output;
+    ouput = add(5, 2); // 5 et 2 sont des paramètre actuel
+    //output : 7
 }
 
-output: 7
+
 ```
 
 Une fonction à besoin: 
