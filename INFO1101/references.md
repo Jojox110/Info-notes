@@ -41,6 +41,20 @@ int main() {
 
 <br>
 
+## Fonctions
+
+C'est possible d'utiliser des references dans une fonction. Ceci est utile pour modifier un variable sans avoir besoin d'utiliser return. 
+
+Voici un exemple:
+```cpp
+void echanger(int &A, int &B){
+    int C = A;
+    A = B;
+    B = A;
+}
+```
+
+
 ## Notes
 Chepas pourquoi, mais tu ne peux pas prendre la référence d'un char
 ```cpp
