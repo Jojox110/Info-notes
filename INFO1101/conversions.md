@@ -5,7 +5,8 @@ Un cast est une façons de changer le type **d'une valeur (et non le type de la 
 
 int main() {
     double x = 10.5;
-    cout << (long)x << endl; // 10
+    cout << (long)x << endl; // Il va afficher 10 puisque c'est converti en type long
+    //x va rester comme un double
 
     // La prochaine exemple n'a pas été montrer en classe
     cout << to_string(x) << endl; // 10.5
