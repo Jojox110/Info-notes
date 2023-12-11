@@ -16,5 +16,17 @@ int main() {
 
 <br>
 
+# Conversions implicites
+Affecter une variable une valeur d'un différent type\
+Exemple:
+```cpp
+int main() {
+    long x = 10.5;
+    cout << x << endl; // 10
+}
+```
+
+<br>
+
 # Pertes d'information
 Quand on fait des conversions de type, on met le risque d'avoir une perte d'information. Par exemple, si on essaye de convertir un double à un long, on perd les chiffre décimaux. Si on essaye de convertir un grand mombre à un short, on perd tous les chiffres plus grand que le maximum qu'un short peux contenir

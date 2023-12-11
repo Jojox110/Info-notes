@@ -1,9 +1,16 @@
 # Tableau
 Les tableau, aka des "arrays", est une structure de données qui permet d'entretenir plusieurs valeurs d'un même type ensemble
 
+"Une collection ordonnée d'éléments homogènes"\
+Homogènes: "Tous les éléments sont de même taille et de même type"\
+Ordonnée: "Les éléments sont positionn.s dans la mémoire selon un ordre donné"
+
 <br>
 
 ## La syntaxe
+
+|Type de base| |Identificateur du tableau| |[Dimension du tableau]|;
+
 ```cpp
 int main() {
     long x[10]; 
