@@ -22,7 +22,7 @@ int main() {
     ifstream entree;
     entree.open("data.txt", ios::in);
     int valeur;
-    valeur >> entree; // Il va entrer une ligne a la fois, alors on doit faire 10 extraction de flux pour récuperer 10 lignes
+    entree >> valeur; // Il va entrer une ligne a la fois, alors on doit faire 10 extraction de flux pour récuperer 10 lignes
     entree.close();
 }
 ```
