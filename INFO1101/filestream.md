@@ -42,8 +42,8 @@ Note (seulement applicable a ofstream): Si le fichier mis dans .open() n'existe 
 #include <fstream>
 
 int main() {
-    ifstream sortie;
-    sortie.open("data.txt", ios::in);
+    ofstream sortie;
+    sortie.open("data.txt", ios::on);
     sortie << "data" << endl;
 }
 ```
