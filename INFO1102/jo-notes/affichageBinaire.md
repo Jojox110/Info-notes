@@ -1,0 +1,1 @@
+# Afficher une valeur en binaire

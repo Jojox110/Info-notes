@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-Note: Les énumérations ont le même système que des variables pour les zones de visibilité. On peut le définir entre les 
+Note: Les énumérations ont le même système que des variables pour les zones de visibilité. On peut le définir dans la zone global pour pouvoir l'utiliser dans tout le fichier.
 
 ### Utiliser les littéraux définit dans l'énumération
 Si on aimerait définir une variable qui contient un littéraux définit par l'énumération, on peut mettre l'énumération comme le type de la variable. 
