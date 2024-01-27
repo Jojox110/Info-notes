@@ -1,4 +1,26 @@
-# Piles (Aka Stack)
-La pile est une structure de donnée qui suit la règle de "dernier entree, premier sortie" ou "last in, first out (LIFO)"
+# Piles (Stack)
 
-Tu peux le voir comme une pile d'assiette. On ajoute toujours les nouveau sur le top, mais on prend aussi les assiettes du top quand on les as besoin.
+## Propriété:
+
+- Débute vide
+
+-  Ajout au top
+
+-  Enlève au top
+
+-  Ne peux pas enlever d'une pile vide
+
+## Métaphore
+
+Une pile d'assiette, on ajoute au top et on prend du top
+
+## Acronyme
+
+First in, last out: FILO
+Last in, first out: LIFO
+
+Premier arrivée, dernier servi
+Dernier arrivée, premier servi
+
+## Consultation:
+- On peut seulement consulter l'élément du top d'une pile

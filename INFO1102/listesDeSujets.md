@@ -33,3 +33,10 @@
 &nbsp; &nbsp; &nbsp; &nbsp; -> Signé vers la gauche (2024-01-23)
 
 -> Opérateur bit-à-bit (2024-01-26)
+
+-> Structure de données (2024-01-26)
+&nbsp; &nbsp; &nbsp; &nbsp; -> Pile (Stack) (2024-01-26)
+&nbsp; &nbsp; &nbsp; &nbsp; -> File d'attente (Queue)( 2024-01-26)
+&nbsp; &nbsp; &nbsp; &nbsp; -> Liste Ordonnée (2024-01-26)
+&nbsp; &nbsp; &nbsp; &nbsp; -> Liste Générale (2024-01-26)
+&nbsp; &nbsp; &nbsp; &nbsp; -> Dèque (Doubly ended queue) (2024-01-26)

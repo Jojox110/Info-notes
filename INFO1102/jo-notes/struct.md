@@ -4,7 +4,41 @@
 
 ## Struct anonyme
 
+```cpp
+#include <iostream>
 
+using namespace std;
+
+struct unStruct {
+    unsigned short US;
+    struct {
+        unsigned long UL;
+        long L;
+    };
+};
+
+union unUnion {
+    unsigned short US;
+    struct {
+        unsigned long UL;
+        long L;
+    };
+};
+
+int main() {
+    unStruct x;
+    x.L = 10;
+    x.UL = 10;
+    x.US = 10;
+
+    unUnion y;
+    y.L = 10;
+    y.UL = 10;
+    y.US = 10;
+}
+```
+
+On a accès au cahmps des structs anonyme avec un selecteur de champs (.)
 
 ## Struct et champs de bit
  
