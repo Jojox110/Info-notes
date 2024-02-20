@@ -118,6 +118,8 @@ void enlevementCibler(Noeud_t *&tete, long cible) {
 
 ## Deque
 
+IMPORTANT: Deque non-completer, a re-travailler
+
 - Enlevement tete
 - Enlevement queue
 - Insertion tete

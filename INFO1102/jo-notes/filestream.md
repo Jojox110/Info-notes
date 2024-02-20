@@ -17,7 +17,7 @@ int main() {
 
     sortie1 << "data ... data" << endl; 
     /*
-    Ceci va ajouter du text au fichier demander, mais tout le contenue dans le fichier demandé sera effacer quand on ouvre le fichier
+    Ceci va ajouter du text au fichier demander, mais tout le contenue dans le fichier demandé sera effacer quand on ouvre le fichier dans la définition de sortie1
     */
 
     sortie2 << "data ... data" << endl;

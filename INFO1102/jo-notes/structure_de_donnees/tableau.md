@@ -76,6 +76,8 @@ void enlever(file_t &file, long &donnee) {
 }
 ```
 
+## TODO: deque
+
 ## Liste ordonnee
 
 ```cpp

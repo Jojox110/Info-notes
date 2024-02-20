@@ -1,6 +1,8 @@
 # Énumérations
 Les énumérations (enum) nous permet ce créer des nouveaux littéraux
 
+Note: Les énumérations sont pour la performance humaine et non pour la performance du compilateur
+
 ## Comment utilisé un énumération
 ```cpp
 #include <iostream>
@@ -58,3 +60,8 @@ enum litteraux_t { litteraux_1 = -5, litteraux_2, litteraux_3 };
 C'est aussi possible de laisser ton curseur par dessus n'importe quelle littéraux dans un énumération pour voir la valeur dans des fichiers cpp.
 
 Note: on peut seulement mettre un entier comme la valeur d'un énumération (un char fonctionne quand-même, il utilisera la valeur ASCII du caractère, ex: 'a' = 97). Si on essaye de mettre n'importe quelle autre type de variable dans un énumération, on aura un erreur.
+
+## Pourquoi les énumérations?
+- Les énumérations nous permet d'autodocumenté notre code, ce qui augmente la lisibilité du code
+- Les énumérations augmente la performance humaine
+- Les énumérations réduit la chance de faire un erreur
