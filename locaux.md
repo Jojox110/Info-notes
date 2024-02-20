@@ -3,7 +3,7 @@ Known good rooms:
 
 Known bad rooms:
 - 135 -> TV out of order
-- 048-1 -> TV won't turn on
+- 048-1 -> TV won't turn on, good otherwise
 
 Half good rooms:
 - 048-2 -> Only kramer worked, other hdmi didnt
