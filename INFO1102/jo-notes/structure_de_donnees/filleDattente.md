@@ -17,4 +17,4 @@ First in, first out: FIFO
 Last in, last out: LILO
 
 ## Consulation
-- On peut seulement consulter l'élément du top d'une file d'attente
+- On peut seulement consulter le premier d'une file d'attente (le client actuellement au comptoir de service)

@@ -1,5 +1,5 @@
 # Énumérations
-Les énumérations (enum) nous permet ce créer des nouveaux littéraux
+Les énumérations (enum) nous permet de créer des nouveaux littéraux
 
 Note: Les énumérations sont pour la performance humaine et non pour la performance du compilateur
 

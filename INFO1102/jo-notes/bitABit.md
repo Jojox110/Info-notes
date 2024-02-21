@@ -89,8 +89,9 @@ Tout les bits du chiffre vont bouger de n position vers la gauche
 void afficherBinaire(unsigned short nombre) {
     unsigned short masque = 0b1000000000000000; // Modifier au même nombre de bits que ton paramètre. Dans ce cas, c'est 16 bits.
     for (short i = 0; i < 16; i++) {
-        unsigned short reponse = ensemble & masque; // Ceci aura seulement effet à la position du 1 dans le masque
+        unsigned short reponse = nombre & masque; // Ceci aura seulement effet à la position du 1 dans le masque
         cout << (reponse == 0 ? 0 : 1); // 1 si le nombre à le bit i d'activé, 0 sinon
+                                        // Reponse est 0 si c'est pas activé, 2 ou plus s'il est activé
         masque = masque >> 1; // Décale le 1 dans le masque vers la droite d'une position
     }
     cout << endl;

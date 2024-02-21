@@ -45,30 +45,10 @@ int main() {
 }
 ```
 
-## Les erreurs d'ambiguité
-Quand on fait une appelle à une fonction et que le compilateur trouve qu'il y a plus qu'une signature probable des paramètres actuel qu'existe, il va nous donnée une erreur d'ambiguité.
-
-Exemple:
-```cpp
-long fonction1(long x) { // signature: fonction(long)
-    return x;
-}
-
-long fonction1(long& x) { // signature: fonction(long&)
-    return x;
-}
-
-int main() {
-    long x = 10;
-    fonction1(10); // Aucune erreur, seulement une signature probable valide
-    fonction(x); // Erreur d'ambiguité: deux signatures probables valide
-}
-```
-
 ## Compter le montant de combinaison de signature probables d'une fonction avec X paramètres (question sur un des tests passé)
 Chaque paramètre peut avoir une signature de fonctions ou deux signature de fonctions: soit il est passé par copie (1 signature probable) ou il est passé par variable (2 signatures probables)
 
-Formule: (de chatgpt, take it with a grain of salt, mais les reponse font du sense)
+Formule: (de chatgpt (same thing pour le code), take it with a grain of salt, mais les reponse font du sense)
 n = Nombre de parametres
 k = Montant de parametre choisit pour la signature de fonction (tu peux le prendre comme le montant de parametre qu'on passe par reference ou passe par copie)
 
