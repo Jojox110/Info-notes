@@ -40,7 +40,8 @@ int main() {
     long x = 10;
     carre(x);
     /*
-    Signatures probables: carre(long) et carre(&long)
+    Signatures probables: carre(long) -> Le paramètre est considérer une expression
+                          carre(&long) -> Le paramètre est considérer une variable
     */
 }
 ```
@@ -48,48 +49,6 @@ int main() {
 ## Compter le montant de combinaison de signature probables d'une fonction avec X paramètres (question sur un des tests passé)
 Chaque paramètre peut avoir une signature de fonctions ou deux signature de fonctions: soit il est passé par copie (1 signature probable) ou il est passé par variable (2 signatures probables)
 
-Formule: (de chatgpt (same thing pour le code), take it with a grain of salt, mais les reponse font du sense)
-n = Nombre de parametres
-k = Montant de parametre choisit pour la signature de fonction (tu peux le prendre comme le montant de parametre qu'on passe par reference ou passe par copie)
-
-n!
-___
-k!*(n-k)!
-
-```cpp
-#include <iostream>
-using namespace std;
-
-// Function to calculate factorial
-int factorial(int n) {
-    if (n <= 1)
-        return 1;
-    else
-        return n * factorial(n - 1);
-}
-
-// Function to calculate binomial coefficient
-int binomialCoefficient(int n, int k) {
-    return factorial(n) / (factorial(k) * factorial(n - k));
-}
-
-// Function to calculate the number of possible function signatures
-int possibleSignatures(int numParams) {
-    int totalSignatures = 0;
-    for (int k = 0; k <= numParams; ++k) {
-        totalSignatures += binomialCoefficient(numParams, k);
-    }
-    return totalSignatures;
-}
-
-int main() {
-    int numParams;
-    cout << "Enter the number of parameters in the function: ";
-    cin >> numParams;
-    int numSignatures = possibleSignatures(numParams);
-    cout << "Number of possible function signatures: " << numSignatures << endl;
-    return 0;
-}
-```
+Formule: 2^n
 
 
