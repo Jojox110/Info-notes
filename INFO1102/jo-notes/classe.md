@@ -26,7 +26,7 @@ public: // Directive d'accès
 };  
 
 int main() {
-
+    
 }
 ```
 

@@ -3,12 +3,9 @@
 ## Propriété:
 
 - Débute vide
-
--  Ajout au top
-
--  Enlève au top
-
--  Ne peux pas enlever d'une pile vide
+- Ajout au top
+- Enlève au top
+- Ne peux pas enlever d'une pile vide
 
 ## Métaphore
 

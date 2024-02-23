@@ -143,3 +143,12 @@ void faireLeMenage(liste_t  &liste) {
     liste.T[liste.compteur] = -1;
 }
 ```
+
+## Formule pour calculer l'address mémoire
+
+### 1D
+&T[K] = &T + K * (sizeof(T[K]))
+
+### 2D
+&T[R][C] = &T[0][0] + R * NC * sizeof(T[0][0]) + C * sizeof(T[0][0])
+NC -> nombre de colonnes dans le tableau

@@ -67,6 +67,8 @@ x >> 5
 Tout les bits du chiffre vont bouger de n position vers la droite
 ```
 
+NOTE: Un décalage de -1 vers la droite d'un type signé va nous donner toute des 1. Un décalage de -1 vers la droite d'un type non-signé va nous donner toute des 0.
+
 ## Décalage vers la gauche
 
 ```
@@ -83,6 +85,8 @@ x << 5;
 Tout les bits du chiffre vont bouger de n position vers la gauche
 ```
 
+NOTE: Un décalage de -1 d'un type signé ou non-signé va nous donner toute des 0.
+
 ## Afficher un nombre décimal en binaire
 
 ```cpp
@@ -91,7 +95,7 @@ void afficherBinaire(unsigned short nombre) {
     for (short i = 0; i < 16; i++) {
         unsigned short reponse = nombre & masque; // Ceci aura seulement effet à la position du 1 dans le masque
         cout << (reponse == 0 ? 0 : 1); // 1 si le nombre à le bit i d'activé, 0 sinon
-                                        // Reponse est 0 si c'est pas activé, 2 ou plus s'il est activé
+                                        // Reponse est 0 si c'est pas activé, 1 ou plus s'il est activé
         masque = masque >> 1; // Décale le 1 dans le masque vers la droite d'une position
     }
     cout << endl;
