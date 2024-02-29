@@ -1,5 +1,6 @@
 Known good rooms:
 - 080-4
+- 080-3
 - 048-2 
 
 Known bad rooms:
