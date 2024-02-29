@@ -9,3 +9,5 @@ Known bad rooms:
 
 Half good rooms:
 - 141 -> 10-15% of the tv is no good
+
+276, 278, 280 are good. No tvs and chairs may be a little uncomfortable
